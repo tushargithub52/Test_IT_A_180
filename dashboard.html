@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        .heading{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(9, 87, 9);
+        }
+        h1 {
+            font-size: 45px;
+            background-color: yellow;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        .user-section button {
+            background-color: rgb(14, 153, 14);
+            padding: 12px 18px;
+            border: 2px solid white;
+            border-radius: 7px;
+            color: white;
+            cursor: pointer;
+        }
+        #select{
+            height: 25px;
+            border-radius: 7px;
+            border: 3px solid rgb(196, 190, 190);
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Dashboard</h1>
+        <h2>Welcome Tushar</h2>
+    </div>
+    <div class="user-section">
+        <button onclick="fetchData()">Fetch Top 10 Github Users</button>
+        <select name="" id="select">
+            <option value="Default">Default</option>
+            <option value="sort" id="sort">Sort Alphabetically</option>
+        </select>
+        <ul id="list">
+
+        </ul>
+        <button id="btn"
+      style="
+        background-color: rgb(221, 18, 18);
+        padding: 10px 10px;
+        font-weight: bolder;
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+      "
+    >
+      Log Out
+    </button>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
